@@ -1,3 +1,3 @@
 # GoIT homework
 Web Studio 
-https://denis-cactus.github.io/goit-markup-hw-05/
+https://denis-cactus.github.io/goit-markup-hw-06/
