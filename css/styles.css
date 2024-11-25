@@ -1,7 +1,21 @@
+:root {
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navy-blue-modal: #2e2f42;
+  --grey: #2e2f42;
+  --white: #ffffff;
+  --dairy: #fcfcfc;
+}
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #ffffff;
-  color: #434455;
+  background-color: var(--white);
+  color: var(--slate);
 }
 a {
   text-decoration: none;
@@ -575,7 +589,7 @@ section {
 .close:focus,
 .close:hover {
   background-color: #404bbf;
-  border: none; 
+  border: none;
 }
 .close:focus .icon_close,
 .close:hover .icon_close {
@@ -716,4 +730,49 @@ section {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
+}
+.burger-menu {
+  display: none;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+/* ======MobileFirst======*/
+@media (min-width: 320px) {
+  .top-line .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .page-header {
+    max-width: 767px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  svg {
+    color: var(--navy-blue);
+  }
+
+    .menu, .con-link{
+      /* display: none; Ховати меню за замовчуванням */
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      width: 200px;
+      padding: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  
+
+  .burger-menu {
+    display: flex;
+    top: 0;
+    right: 0;
+    position: absolute;
+  }
 }

@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="description"
+    <meta name="description"
       content="Effective Solutions
   for Your Business"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Effective Solutions for Your Business</title>
     <link
       rel="stylesheet"
@@ -29,10 +29,10 @@
     <header class="top-line">
       <div class="container header-container">
         <nav class="page-header">
-          <a class="logo" href="./index.html"
-            >Web<span class="head">Studio</span></a
-          >
-
+          <a class="logo" href="./index.html">Web<span class="head">Studio</span></a>
+          <button class="burger-menu"><svg width="24" height="24">
+            <use href="./images/icons/symbol-defs.svg#icon-menu"></use>
+          </svg></button>
           <ul class="menu">
             <li class="menu-nav">
               <a class="menu-nav-link current" href="./index.html">Studio</a>
@@ -44,6 +44,8 @@
               <a class="menu-nav-link" href="">Contacts</a>
             </li>
           </ul>
+          
+
         </nav>
         <address>
           <ul class="con-link">
@@ -55,9 +57,11 @@
             </li>
           </ul>
         </address>
-      </div>
-    </header>
 
+      </div>
+
+
+    </header>
     <main>
       <section class="section-hero hero">
         <div class="container">
@@ -538,7 +542,7 @@
         </div>
       </div>
     </footer>
-<!-- ModalOverlay -->
+
     <div class="modal-overlay is-open">
       <div class="modal">
         <button class="close" type="button">
@@ -547,7 +551,7 @@
           </svg>
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
-<!-- Form Container -->
+
         <form class="modal_form">
           
           <div class="form-container">
@@ -578,7 +582,7 @@
             <label class="modal_label" for="user-comment">Comment</label>
             <textarea class="modal-text-input" id="user-comment" name="user-comment" rows="5" placeholder="Text input"></textarea>
           </div>
-<!-- CheckboX -->
+
           <div class="modal_checkbox">
 
             <input class="input_check visually-hidden" id="user-privacy" name="user-privacy" type="checkbox" value="true"/>
