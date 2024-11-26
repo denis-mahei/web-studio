@@ -282,3 +282,33 @@ button {
 .mobile-nav {
     margin-bottom: auto;
 }
+.mb-social {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    color: #ffffff;
+    margin-bottom: 16px;
+  }
+  .mb-social-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 48px;
+  }
+  .mb-social-icon .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+  }
+  .icon {
+    margin-bottom: 0;
+    fill: var(--cloud);
+  }
