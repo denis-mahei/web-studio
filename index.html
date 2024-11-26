@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description"
+    <meta
+      name="description"
       content="Effective Solutions
   for Your Business"
     />
@@ -29,10 +30,10 @@
     <header class="top-line">
       <div class="container header-container">
         <nav class="page-header">
-          <a class="logo" href="./index.html">Web<span class="head">Studio</span></a>
-          <button class="burger-menu"><svg width="24" height="24">
-            <use href="./images/icons/symbol-defs.svg#icon-menu"></use>
-          </svg></button>
+          <a class="logo" href="./index.html"
+            >Web<span class="head">Studio</span></a
+          >
+
           <ul class="menu">
             <li class="menu-nav">
               <a class="menu-nav-link current" href="./index.html">Studio</a>
@@ -44,42 +45,81 @@
               <a class="menu-nav-link" href="">Contacts</a>
             </li>
           </ul>
-          
-
         </nav>
-        <address>
-          <ul class="con-link">
-            <li>
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <address class="contacts">
+          <ul class="con-list">
+            <li class="con-item">
+              <a class="con-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
             </li>
-            <li>
-              <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+            <li class="con-item">
+              <a class="con-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
             </li>
           </ul>
         </address>
-
+        <button class="burger-menu" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-
-
+      <div class="mobile_menu is-open" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>
+            <svg class="close" width="8" height="8">
+              <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-nav">
+            <ul class="mb-menu-nav">
+              <li class="mb-menu-list">
+                <a href="#" class="mb-menu-link current"> Studio</a>
+              </li>
+              <li class="mb-menu-list">
+                <a href="#" class="mb-menu-link"> Portfolio</a>
+              </li>
+              <li class="mb-menu-list">
+                <a href="#" class="mb-menu-link"> Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mb-contacts">
+            <ul class="mb-contacts-list">
+              <li class="mb-contacts-item">
+                <a href="mailto:info@devstudio.com" class="mb-con-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mb-contacts-item">
+                <a href="tel:+110001111111" class="mb-con-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
     </header>
+
     <main>
-      <section class="section-hero hero">
+      <section class="section-hero hero hidden">
         <div class="container">
           <h1 class="title">Effective Solutions for Your Business</h1>
           <button class="button" type="button">Order Service</button>
         </div>
       </section>
 
-      <section class="section-dscr">
+      <section class="section-dscr hidden">
         <div class="container">
           <h2 class="visually-hidden">Effective Solutions for Your Business</h2>
           <ul class="descr">
             <li class="ls-item">
               <div class="icon-list">
                 <svg class="icon" width="64" height="64">
-                  <use
-                    href="./images/icons/symbol-defs.svg#icon-antenna"
-                  ></use>
+                  <use href="./images/icons/symbol-defs.svg#icon-antenna"></use>
                 </svg>
               </div>
               <h3 class="main-descr">Strategy</h3>
@@ -103,9 +143,7 @@
             <li class="ls-item">
               <div class="icon-list">
                 <svg class="icon" width="64" height="64">
-                  <use
-                    href="./images/icons/symbol-defs.svg#icon-diagram"
-                  ></use>
+                  <use href="./images/icons/symbol-defs.svg#icon-diagram"></use>
                 </svg>
               </div>
               <h3 class="main-descr">Diligence</h3>
@@ -133,7 +171,7 @@
         </div>
       </section>
 
-      <section class="section_team">
+      <section class="section_team hidden">
         <div class="container">
           <h2 class="our-team">Our Team</h2>
           <ul class="team">
@@ -373,7 +411,7 @@
         </div>
       </section>
 
-      <section class="our-portfolio">
+      <section class="our-portfolio hidden">
         <div class="container">
           <h2 class="our-team">Our Portfolio</h2>
 
@@ -473,7 +511,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer hidden">
       <div class="container social-footer">
         <div class="main_footer">
           <a class="low" href="./index.html"
@@ -543,7 +581,7 @@
       </div>
     </footer>
 
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay is-open hidden">
       <div class="modal">
         <button class="close" type="button">
           <svg class="icon_close" width="8" height="8">
@@ -553,46 +591,78 @@
         <p class="modal-title">Leave your contacts and we will call you back</p>
 
         <form class="modal_form">
-          
           <div class="form-container">
             <label for="user-name" class="modal_label">Name</label>
             <div class="input_container">
-              <input class="modal_input" type="text" name="user-name" id="user-name"/>
-              <svg class="modal-icon" width="18" height="24"><use href="./images/icons/symbol-defs.svg#icon-person"></use></svg>
+              <input
+                class="modal_input"
+                type="text"
+                name="user-name"
+                id="user-name"
+              />
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/icons/symbol-defs.svg#icon-person"></use>
+              </svg>
             </div>
           </div>
 
           <div class="form-container">
             <label for="phone" class="modal_label">Phone</label>
             <div class="input_container">
-              <input type="text" class="modal_input" name="phone" id="phone"/>
-              <svg class="modal-icon" width="18" height="24"><use href="./images/icons/symbol-defs.svg#icon-phone"></use></svg>
+              <input type="text" class="modal_input" name="phone" id="phone" />
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
+              </svg>
             </div>
           </div>
 
           <div class="form-container">
             <label for="email" class="modal_label">Email</label>
             <div class="input_container">
-              <input type="text" class="modal_input" name="email" id="email"/>
-              <svg class="modal-icon" width="18" height="24"><use href="./images/icons/symbol-defs.svg#icon-email"></use></svg>
+              <input type="text" class="modal_input" name="email" id="email" />
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/icons/symbol-defs.svg#icon-email"></use>
+              </svg>
             </div>
           </div>
 
           <div class="form-container last">
             <label class="modal_label" for="user-comment">Comment</label>
-            <textarea class="modal-text-input" id="user-comment" name="user-comment" rows="5" placeholder="Text input"></textarea>
+            <textarea
+              class="modal-text-input"
+              id="user-comment"
+              name="user-comment"
+              rows="5"
+              placeholder="Text input"
+            ></textarea>
           </div>
 
           <div class="modal_checkbox">
+            <input
+              class="input_check visually-hidden"
+              id="user-privacy"
+              name="user-privacy"
+              type="checkbox"
+              value="true"
+            />
 
-            <input class="input_check visually-hidden" id="user-privacy" name="user-privacy" type="checkbox" value="true"/>
-
-            <label class="label_checkbox" for="user-privacy"><span class="check-icon"><svg class="modal-icon-check" width="10" height="8">
-              <use href="./images/icons/symbol-defs.svg#icon-access"></use></svg></span>I accept the terms and conditions of the<a class="link-checkbox" href="/">Privacy Policy</a></label> 
+            <label class="label_checkbox" for="user-privacy"
+              ><span class="check-icon"
+                ><svg class="modal-icon-check" width="10" height="8">
+                  <use
+                    href="./images/icons/symbol-defs.svg#icon-access"
+                  ></use></svg></span
+              >I accept the terms and conditions of the<a
+                class="link-checkbox"
+                href="/"
+                >Privacy Policy</a
+              ></label
+            >
           </div>
-          <button type="submit" class="submit-btn" disabled>Send</button> 
+          <button type="submit" class="submit-btn" disabled>Send</button>
         </form>
       </div>
-      </div>
+    </div>
+    <script src="./main.js"></script>
   </body>
 </html>
