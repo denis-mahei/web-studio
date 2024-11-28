@@ -66,10 +66,10 @@
           </svg>
         </button>
       </div>
-      <div class="mobile_menu is-open" data-menu>
+      <div class="mobile_menu is-open hidden" data-menu>
         <div class="container mobile-menu-container">
           <button class="mobile-menu-close" data-menu-close>
-            <svg class="close" width="8" height="8">
+            <svg class="mb-close" width="8" height="8">
               <use href="./images/icons/symbol-defs.svg#icon-close"></use>
             </svg>
           </button>
@@ -142,11 +142,13 @@
       <section class="section-hero hero">
         <div class="container">
           <h1 class="title">Effective Solutions for Your Business</h1>
-          <button class="button" type="button">Order Service</button>
+          <button class="button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
-      <section class="section-dscr hidden">
+      <section class="section section-dscr">
         <div class="container">
           <h2 class="visually-hidden">Effective Solutions for Your Business</h2>
           <ul class="descr">
@@ -205,12 +207,34 @@
         </div>
       </section>
 
-      <section class="section_team hidden">
+      <section class="section section_team">
         <div class="container">
-          <h2 class="our-team">Our Team</h2>
+          <h2 class="team-title">Our Team</h2>
           <ul class="team">
             <li class="team-dscr">
-              <img src="./images//img1.jpg" alt="team-card-1" width="264" />
+              <!-- <img src="./images/img1.jpg" alt="team-card-1" width="264" /> -->
+              <picture>
+                <source
+                  type="image/jpeg"
+                  srcset="./images/team-card/img-3.jpg 1x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="./images/team-card/img@2x-3.jpg 2x"
+                  media="(max-width: 1157px)"
+                />
+                <source
+                  srcset="./images/team-card/img@3x-3.jpg 3x"
+                  type="image/jpeg"
+                  media="(min-width: 1158px)"
+                />
+                <img
+                  src="./images/team-card/img-3.jpg"
+                  alt="photo card"
+                  width="264"
+                />
+              </picture>
               <div class="card-content">
                 <h3 class="team-card">Mark Guerrero</h3>
                 <p class="team-card-description">Product Designer</p>
@@ -268,7 +292,28 @@
               </div>
             </li>
             <li class="team-dscr">
-              <img src="./images/img2.jpg" alt="team-card-2" width="264" />
+              <picture>
+                <source
+                  srcset="./images/team-card/img-2.jpg"
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/team-card/img@2x-2.jpg"
+                  type="image/jpeg"
+                  media="(max-width: 1157px)"
+                />
+                <source
+                  srcset="./images/team-card/img@3x-2.jpg"
+                  type="image/jpeg"
+                  media="(min-width: 1158px)"
+                />
+                <img
+                  src="./images/team-card/img-2.jpg"
+                  alt="team-card-2"
+                  width="264"
+                />
+              </picture>
               <div class="card-content">
                 <h3 class="team-card">Tom Ford</h3>
                 <p class="team-card-description">Frontend Developer</p>
@@ -326,7 +371,28 @@
               </div>
             </li>
             <li class="team-dscr">
-              <img src="./images/img3.jpg" alt="team-card-3" width="264" />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team-card/img-1.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 1157px)"
+                  srcset="./images/team-card/img@2x-1.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="./images/team-card/img@3x-1.jpg"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/team-card/img-1.jpg"
+                  alt="team-card-3"
+                  width="264"
+                />
+              </picture>
               <div class="card-content">
                 <h3 class="team-card">Camila Garcia</h3>
                 <p class="team-card-description">Marketing</p>
@@ -384,7 +450,28 @@
               </div>
             </li>
             <li class="team-dscr">
-              <img src="./images/img4.jpg" alt="team-card-4" width="264" />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team-card/img.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 1157px)"
+                  srcset="./images/team-card/img@2x.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="./images/team-card/img@3x.jpg"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/team-card/img.jpg"
+                  alt="team-card-3"
+                  width="264"
+                />
+              </picture>
               <div class="card-content">
                 <h3 class="team-card">Daniel Wilson</h3>
                 <p class="team-card-description">UI Designer</p>
@@ -445,14 +532,36 @@
         </div>
       </section>
 
-      <section class="our-portfolio hidden">
+      <section class="section our-portfolio">
         <div class="container">
-          <h2 class="our-team">Our Portfolio</h2>
+          <h2 class="team-title">Our Portfolio</h2>
 
           <ul class="row">
             <li class="card-row">
               <div class="project_card">
-                <img src="./images/img-5.jpg" alt="bankapp" width="360" />
+                <picture>
+                  <source
+                    srcset="./images/portfolio/img-5.jpg"
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="./images/portfolio/img@2x-5.jpg"
+                    type="image/jpeg"
+                    media="(max-width: 1157px)"
+                  />
+                  <source
+                    srcset="./images/portfolio/img@3x-5.jpg"
+                    type="image/jpeg"
+                    media="(min-width: 1158px)"
+                  />
+                  <img
+                    src="./images/portfolio/img-5.jpg"
+                    alt="bankapp"
+                    width="360"
+                  />
+                </picture>
+
                 <p class="active-item">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -467,7 +576,29 @@
             </li>
             <li class="card-row">
               <div class="project_card">
-                <img src="./images/img-4.jpg" alt="payment" width="360" />
+                <picture>
+                  <source
+                    srcset="./images/portfolio/img-4.jpg"
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="./images/portfolio/img@2x-4.jpg"
+                    type="image/jpeg"
+                    media="(max-width: 1157px)"
+                  />
+                  <source
+                    srcset="./images/portfolio/img@3x-4.jpg"
+                    type="image/jpeg"
+                    media="(min-width: 1158px)"
+                  />
+                  <img
+                    src="./images/portfolio/img-4.jpg"
+                    alt="payment"
+                    width="360"
+                  />
+                </picture>
+
                 <p class="active-item">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -482,7 +613,28 @@
             </li>
             <li class="card-row">
               <div class="project_card">
-                <img src="./images/img-3.jpg" alt="meditation" width="360" />
+                <picture>
+                  <source
+                    srcset="./images/portfolio/img-3.jpg"
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="./images/portfolio/img@2x-3.jpg"
+                    type="image/jpeg"
+                    media="(max-width: 1157px)"
+                  />
+                  <source
+                    srcset="./images/portfolio/img@3x-3.jpg"
+                    type="image/jpeg"
+                    media="(min-width: 1158px)"
+                  />
+                  <img
+                    src="./images/portfolio/img-3.jpg"
+                    alt="bankapp"
+                    width="360"
+                  />
+                </picture>
                 <p class="active-item">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -497,7 +649,28 @@
             </li>
             <li class="card-row">
               <div class="project_card">
-                <img src="./images/img-2.jpg" alt="taxi" width="360" />
+                <picture>
+                  <source
+                    srcset="./images/portfolio/img-2.jpg"
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="./images/portfolio/img@2x-2.jpg"
+                    type="image/jpeg"
+                    media="(max-width: 1157px)"
+                  />
+                  <source
+                    srcset="./images/portfolio/img@3x-2.jpg"
+                    type="image/jpeg"
+                    media="(min-width: 1158px)"
+                  />
+                  <img
+                    src="./images/portfolio/img-2.jpg"
+                    alt="bankapp"
+                    width="360"
+                  />
+                </picture>
                 <p class="active-item">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -512,7 +685,28 @@
             </li>
             <li class="card-row">
               <div class="project_card">
-                <img src="./images/img-1.jpg" alt="illustrations" width="360" />
+                <picture>
+                  <source
+                    srcset="./images/portfolio/img-1.jpg"
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="./images/portfolio/img@2x-1.jpg"
+                    type="image/jpeg"
+                    media="(max-width: 1157px)"
+                  />
+                  <source
+                    srcset="./images/portfolio/img@3x-1.jpg"
+                    type="image/jpeg"
+                    media="(min-width: 1158px)"
+                  />
+                  <img
+                    src="./images/portfolio/img-1.jpg"
+                    alt="bankapp"
+                    width="360"
+                  />
+                </picture>
                 <p class="active-item">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -527,7 +721,28 @@
             </li>
             <li class="card-row">
               <div class="project_card">
-                <img src="./images/img.jpg" alt="courses" width="360" />
+                <picture>
+                  <source
+                    srcset="./images/portfolio/img.jpg"
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="./images/portfolio/img@2x.jpg"
+                    type="image/jpeg"
+                    media="(max-width: 1157px)"
+                  />
+                  <source
+                    srcset="./images/portfolio/img@3x.jpg"
+                    type="image/jpeg"
+                    media="(min-width: 1158px)"
+                  />
+                  <img
+                    src="./images/portfolio/img.jpg"
+                    alt="bankapp"
+                    width="360"
+                  />
+                </picture>
                 <p class="active-item">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -545,7 +760,7 @@
       </section>
     </main>
 
-    <footer class="page-footer hidden">
+    <footer class="page-footer">
       <div class="container social-footer">
         <div class="main_footer">
           <a class="low" href="./index.html"
@@ -615,9 +830,9 @@
       </div>
     </footer>
 
-    <div class="modal-overlay is-open hidden">
+    <div class="modal-overlay is-open data-modal">
       <div class="modal">
-        <button class="close" type="button">
+        <button class="close" type="button" data-modal-close>
           <svg class="icon_close" width="8" height="8">
             <use href="./images/icons/symbol-defs.svg#icon-close"></use>
           </svg>
@@ -697,6 +912,7 @@
         </form>
       </div>
     </div>
-    <script src="./main.js"></script>
+    <script src="./js/mbmenu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

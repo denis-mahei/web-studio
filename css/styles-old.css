@@ -212,7 +212,7 @@ img {
   margin-right: 24px;
   width: calc((100% - 72px) / 4);
 }
-.our-team {
+.team-title {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -739,94 +739,3 @@ section {
 }
 
 /* ======MobileFirst======*/
-@media (min-width: 320px)   {
-  .mf-overlay {
-    width: 100%;
-  }
-  .container.header-container.mf-overlay  {
-    position: relative;
-  }
-  
-  /* Модальне вікно (мобільна версія) */
-  .page-header,
-  address {
-    display: none; /* Ховаємо за замовчуванням */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80%;
-    background-color: var(--cloud); /* Прозорий чорний фон */
-    z-index: 1000; /* Вище за все */
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; /* Стовпчик */
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .page-header.is-open,
-  address.is-open {
-    display: flex; /* Відображаємо при відкритті */
-  }
-  
-  .menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .menu-nav {
-    margin-bottom: 15px;
-  }
-  
-  .menu-nav-link {
-    color: var(--navy-blue); /* Білий текст */
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  .menu-nav-link:hover {
-    color: #f4f4fd; /* Світліший білий при наведенні */
-  }
-  
-  .con-link {
-    margin-top: 20px;
-    list-style: none;
-    padding: 0;
-  }
-  
-  .con-link a {
-    color: #ffffff; /* Білий текст */
-    font-size: 16px;
-    text-decoration: none;
-  }
-  
-  .con-link a:hover {
-    color: #f4f4fd; /* Світліший білий при наведенні */
-  }
-  
-  /* Бургер-меню */
-  .burger-menu {
-    display: flex;
-    position: absolute;
-    top: 16px;
-    right: 16px;
-  }
-  /* Styles menu ====>*/
-  .menu-nav-link {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 40px;
-    padding: 0;
-  }
-  .con-link li a {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.4px;
-  }/* <====Styles menu*/
-
-}
