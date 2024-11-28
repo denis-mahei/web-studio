@@ -347,7 +347,7 @@ img {
 .ls-item .main-descr {
   margin-top: 8px;
 }
-.page-down {
+.footer-item {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -355,7 +355,7 @@ img {
   background-color: #2e2f42;
   max-width: 264px;
 }
-.low {
+.footer-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -371,7 +371,7 @@ img {
   padding: 100px 0 100px;
   margin-bottom: 16px;
 }
-.page-footer .foot {
+.footer-logo-span {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
