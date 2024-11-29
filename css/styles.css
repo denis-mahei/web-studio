@@ -135,7 +135,6 @@ button {
 }
 .contacts {
   display: block;
-  font-style: normal;
 }
 .menu-nav-link {
   color: var(--navy-blue);
@@ -164,6 +163,7 @@ button {
 .con-link {
   color: var(--slate);
   font-size: 12px;
+  font-style: normal;
   line-height: 1.17;
   letter-spacing: 0.04em;
   font-style: normal;
@@ -338,7 +338,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office/Dark-bg-mobile.png);
+    url(../images/people-office/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -382,7 +382,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office/Dark-bg-tablet.png);
+      url(../images/people-office/people-office@2x.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -413,7 +413,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office/people-office1@2x.png);
+      url(../images/people-office/people-office@3x.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -738,7 +738,6 @@ button {
   opacity: 1;
   pointer-events: auto;
   visibility: visible;
-  /* transform: translateY(0); */
 }
 .modal {
   background: var(--dairy);
@@ -754,7 +753,6 @@ button {
   top: 50%;
   transition: top 0.5s ease;
   left: 50%;
-  /* transform: translateY(0); */
   transform: translate(-50%, -50%);
 }
 .modal > .close {
@@ -1101,7 +1099,7 @@ button {
   }
   .social-footer {
     justify-content: start;
-    gap: 24px;
+    gap: 72px 24px;
   }
   .form-subscribe {
     gap: 24px;
