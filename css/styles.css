@@ -623,8 +623,27 @@ button {
 
 /* <=====Section Our Team */
 /* OurPortfolio======> */
+.card-row:active .active-item {
+  transform: translateY(0%);
+}
+.project_card {
+  position: relative;
+  overflow: hidden;
+}
 .active-item {
-  display: none;
+  position: absolute;
+  top: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-row {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
