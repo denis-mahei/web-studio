@@ -637,9 +637,9 @@ button {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
+  color: var(--cloud);
   padding: 40px 32px;
-  background-color: #4d5ae5;
+  background-color: var(--iris);
   height: 100%;
   width: 100%;
   transform: translateY(100%);
