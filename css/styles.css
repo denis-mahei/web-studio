@@ -62,7 +62,10 @@ button {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+.page-header > .menu,
+.top-line + .contacts {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -76,8 +79,8 @@ button {
 }
 /* =========header========= */
 @media screen and (max-width: 767px) {
-  .page-header > .menu,
-  .header-container > .contacts {
+  .menu,
+  .contacts {
     display: none;
   }
 }
